@@ -18,7 +18,7 @@ You can change their in `.env` file
 
 Clusters are created for each processor, and they listen on each individual port
 
-Clusters listen next ports: `[your_port + cluster_id\]`
+Clusters listen next ports: `[your_port + cluster_id]`
 
  The balancer distributes the load across all available clusters.
 
@@ -70,7 +70,7 @@ USER:
 - age: `number` - **required**
 - hobbies: `Array<string>` or empty `Array` - **required**
 
-_Return values:_ `Array\<USER\>` or empty `ARRAY`
+_Return values:_ `Array<USER>` or empty `ARRAY`
 
 #### POST
 `api/users/` - add new user
@@ -91,7 +91,7 @@ _Request body fields_
 
 - `username: string` - **required**
 - `age: number` - **required**
-- `hobbies: Array\<string\>` or empty `Array` - **required**
+- `hobbies: Array<string>` or empty `Array` - **required**
 
 _Return values:_ **USER**
 
